@@ -33,8 +33,6 @@ jobs:
       with:
         path: /tmp/datacache
         key: cache_0610_04
-      env:
-        AZURE_LOG_LEVEL: info
     - if: steps.cache.outputs.cache-hit != 'true'
       run: |
         rm -rf /tmp/datacache
