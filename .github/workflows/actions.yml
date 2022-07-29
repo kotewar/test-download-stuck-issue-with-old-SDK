@@ -1,8 +1,6 @@
 name: Test Cache download failure
 on:
   workflow_dispatch:
-  schedule:
-  - cron: "*/10 * * * *"
 jobs:
   java-example:
     runs-on: ubuntu-latest
